@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="book.css">
+    </head>
+    <body>
+    <div id="content">
+        <header id="main-header">
+            <h1>List of Books</h1>
+        </header>
+        <form id="form-search">
+            <input type="text" id="search" placeholder="Search for books...">
+        </form>
+        <section id="to-read" class="section">
+            <h2 class="head">Books to read</h2>
+            <form id="form-to-read">
+                <div id="list-to-read" class="books border">
+
+                    <li class="list">
+                        <p class="text">4 hour work week by tim ferris</p>
+                        <button type="button" class="delete">Delete</button>
+                    </li>
+
+                    <li class="list">
+                        <p class="text">the millionare fastlane by  M. J. DeMarco</p>
+                        <button type="button" class="delete">Delete</button>
+                    </li>
+
+                    <li class="list">
+                        <p class="text">Unscripted by  M. J. DeMarco</p>
+                        <button type="button" class="delete">Delete</button>
+                    </li>
+                        
+                    <li class="list">
+                        <p class="text">Secrets of the Millionaire Mind by T.Harv Eker</p>
+                        <button type="button" class="delete">Delete</button>
+                    </li>
+
+                    <li class="list">
+                        <p class="text">The Obstacle Is the Way by Ryan Holiday</p>
+                        <button type="button" class="delete">Delete</button>
+                    </li>
+
+                    <li class="list">
+                        <p class="text">hard times create strong men by Stefan Aarnio</p>
+                        <button type="button" class="delete">Delete</button>
+                    </li>
+
+                    <li class="list">
+                        <p class="text">The Way of the Superior Man by David Deida</p>
+                        <button type="button" class="delete">Delete</button>
+                    </li>
+                </div>
+            </form>
+            <form class="add-books" name="add-books" id="add-to-read">
+                <h2 class="head">Add Books</h2>
+                <div class="error"></div>
+                <input type="text" class="for-add" id="item">
+                <button type="Submit">Add Book</button>
+            </form>
+        </section>
+        <section id="completed" class="section">
+            <h2 class="head">Books I've Completed</h2>
+            <form id="form-completed">
+                <div id="list-completed" class="books border">
+                    <li class="list">
+                        <p class="text">Deep Work by Cal Newport</p>
+                        <button type="button" class="delete">Delete</button>
+                    </li>
+
+                    <li class="list">
+                        <p class="text">How to win friends and influence people by Dale Carnegie</p>
+                        <button type="button" class="delete">Delete</button>
+                    </li>
+
+                    <li class="list">
+                        <p class="text">Why We Sleep by Matthew walker</p>
+                        <button type="button" class="delete">Delete</button>
+                    </li>
+                    <li class="list">
+                        <p class="text">the subtle art of not giving a fuck by Mark Manson</p>
+                        <button type="button" class="delete">Delete</button>
+                    </li>
+                    <li class="list">
+                        <p class="text">Everything is fucked by mark manson</p>
+                        <button type="button" class="delete">Delete</button>
+                    </li>
+                    <li class="list">
+                        <p class="text">Sleep Smarter by Shawn Stevenson</p>
+                        <button type="button" class="delete">Delete</button>
+                    </li>
+                </div>
+            </form>
+            <form class="add-books" name="add-books" id="add-to-completed">
+                <h2 class="head">Add Books</h2>
+                <div class="error"></div>
+                <input type="text" class="for-add">
+                <button type="Submit">Add Book</button>
+            </form>
+        </section>
+
+
+        <section id="current" class="section">
+            <h2 class="head">Books I'm currentlly reading</h2>
+            <form id="form-current">
+                <div id="list-currently" class="books border">
+                    <li class="list">
+                        <p class="text">Eat Smarter by Shawn Stevenson</p>
+                        <button type="button" class="delete">Delete</button></li>
+                    </div>
+            </form>
+            <form class="add-books" name="add-books" id="add-to-current">
+                <h2 class="head">Add Books</h2>
+                <div class="error"></div>
+                <input type="text" class="for-add">
+                <button type="Submit">Add Book</button>
+            </form>
+        </section>
+        
+
+    </div>
+        <div style="margin-top:400px;"></div>
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+        <script src="book.js"></script>
+    </body>
+</html>
